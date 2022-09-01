@@ -1,24 +1,26 @@
 # Proyecto_Integrador
 ![imagen](/img/MyData.jpg)
-## MyData
+# MyData
 ```
-El mismo es un programa que realiza reportes para poder ver el posicionamiento en 
-el rubro farmaceutico.
-```
-# Entrada al sistema
-```
-Título del Proyecto
-Acá va un párrafo que describa lo que es el proyecto, y/o una imagen de marca
+El mismo es un programa que que busca orientar y analizar los productos más comercializados en la industria.
 
-Comenzando🚀
+```
+# Comenzando🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento
 en tu máquina local para propósitos de desarrollo y pruebas.
 Mira Deployment para conocer cómo desplegar el proyecto.
 
 Pre-requisitos📋
-Que cosas necesitas para instalar el software y cómo instalarlas
-Da un ejemplo
-Instalación🔧
+Instalar las siguientes librerías dentro de Visual Studio Code 🔧
+-import csv
+-from pickle import TRUE
+-from this import d
+-import registro
+-import random
+
+Instalalar librería para leer el archivo CSV🔧
+-import csv
+
 Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un
 entorno de desarrollo ejecutándose
 Dí cómo será ese paso
