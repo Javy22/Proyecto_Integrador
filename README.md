@@ -8,13 +8,12 @@ Tambíen permite realizar reporte por visitador / farmacia.
 ## Comenzando🚀
 Para comenzar se desplegará un menú con varias opciones, deberás elegir alguna y en el instante se genera reporte solicitado.
 
- menu =
-    Seleccione una opcion:
-    1. Ingresar nuevo registro 
-    2. Eliminar un registro
-    3. Consulta de ventas por Laboratorio 
-    4. Consultar registro venta por visitador
-    5. Consulta general de los registros
+
+1. Ingresar nuevo registro 
+2. Eliminar un registro
+3. Consulta de ventas por Laboratorio 
+4. Consultar registro venta por visitador
+5. Consulta general de los registros
 
 
 
