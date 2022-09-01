@@ -20,8 +20,8 @@ Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code �
 - import random
 - Ítem 1
 
-Instalalar librería en archivo (registro.py )🔧
--import csv
+Instalar librería en archivo (registro.py )🔧
+- import csv
 
 ```
 Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un
