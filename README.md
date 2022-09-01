@@ -12,17 +12,18 @@ en tu máquina local para propósitos de desarrollo y pruebas.
 Mira Deployment para conocer cómo desplegar el proyecto.
 ```
 Pre-requisitos📋
-Instalar las siguientes librerías dentro de Visual Studio Code 🔧
+Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code 🔧
 - import csv
 - from pickle import TRUE
 - from this import d
 - import registro
 - import random
 - Ítem 1
-```
-Instalalar librería para leer el archivo CSV🔧
+
+Instalalar librería en archivo (registro.py )🔧
 -import csv
 
+```
 Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un
 entorno de desarrollo ejecutándose
 Dí cómo será ese paso
