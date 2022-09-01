@@ -17,6 +17,7 @@ Instalar las siguientes librerías dentro de Visual Studio Code 🔧
 - from this import d
 - import registro
 - import random
+- Ítem 1
 ```
 Instalalar librería para leer el archivo CSV🔧
 -import csv
