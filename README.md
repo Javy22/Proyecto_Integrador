@@ -35,9 +35,9 @@ Al seleccionar alguna de las opciones anteriores podrá ver el siguiente reporte
 
 Elegiste la opción: 4
 
-Visitador:  {'nombre': 'Javier Salinas', 'cantidad': 4}
-visitador {'nombre': 'Felipe Salinas', 'cantidad': 0}
-¡Reporte de ventas por Visitador terminado!
+- Visitador:  {'nombre': 'Javier Salinas', 'cantidad': 4}
+- visitador {'nombre': 'Felipe Salinas', 'cantidad': 0}
+- ¡Reporte de ventas por Visitador terminado!
 
 
 Despliegue📦
