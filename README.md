@@ -39,26 +39,19 @@ Elegiste la opción: 4
 - visitador {'nombre': 'Felipe Salinas', 'cantidad': 0}
 - ¡Reporte de ventas por Visitador terminado!
 
-
-Despliegue📦
-Agrega notas adicionales sobre cómo hacer deploy
-Construido con🛠
-Menciona las herramientas que utilizaste para crear tu proyecto
-● Dropwizard - El framework web usado
-● Maven - Manejador de dependencias
-● ROME - Usado para generar RSS
-Contribuyendo🖇
-Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y
-el proceso para enviarnos pull requests.
-Wiki📖
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Wiki
-Versionado📌
+## Despliegue📦
+Herramientas utilizadas para el desarrollo
+- Visual Studio Code
+ - Github
+   
+## Versionado📌
 Versión 1.01
-Autores ✒
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
-● Fulanito De Tal - Documentación - fulanitodetal
-Licencia📄
+
+## Autores ✒
+Proyecto realizado por :
+● Salinas Javier DNI : 27794377
+
+##Licencia📄
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para
 detalles
-FI
-```
+
