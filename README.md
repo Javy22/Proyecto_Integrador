@@ -2,13 +2,21 @@
 ![imagen](/img/MyData.jpg)
 # MyData
 
-El mismo es un programa que que busca orientar y analizar los productos más comercializados en la industria.
+El mismo es un programa que busca orientar y analizar los productos más comercializados en la industria.
 Tambíen permite realizar reporte por visitador / farmacia.
 
 ## Comenzando🚀
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento
-en tu máquina local para propósitos de desarrollo y pruebas.
-Mira Deployment para conocer cómo desplegar el proyecto.
+Para comenzar se desplegará un menú con varias opciones, deberás elegir alguna y en el instante se genera reporte solicitado.
+
+menu = '''\n
+    Seleccione una opcion:
+    1. Ingresar nuevo registro 
+    2. Eliminar un registro
+    3. Consulta de ventas por Laboratorio 
+    4. Consultar registro venta por visitador
+    5. Consulta general de los registros
+
+
 
 ## Pre-requisitos📋
 Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code 🔧
@@ -22,16 +30,7 @@ Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code �
 Instalar librería en archivo (registro.py )🔧
 - import csv
 
-```
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un
-entorno de desarrollo ejecutándose
-Dí cómo será ese paso
-Da un ejemplo
-Y repite
-hasta finalizar
-Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para
-una pequeña demo
-Ejecutando las pruebas ⚙
+##Ejecutando las pruebas ⚙
 Explica como ejecutar las pruebas automatizadas para este sistema
 Analice las pruebas end-to-end🔩
 Explica que verifican estas pruebas y por qué
