@@ -5,7 +5,7 @@
 El mismo es un programa que busca orientar y analizar los productos más comercializados en la industria.
 Tambíen permite realizar reporte por visitador / farmacia.
 
-## Comenzando🚀
+## Comenzando 💻
 Para comenzar se desplegará un menú con varias opciones, deberás elegir alguna y en el instante se genera reporte solicitado.
 
 
