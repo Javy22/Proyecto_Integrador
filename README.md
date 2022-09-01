@@ -28,7 +28,7 @@ Para comenzar se desplegará un menú con varias opciones, deberás elegir algun
 4. Consultar registro venta por visitador
 5. Consulta general de los registros
 
-## Ejecucón del programa 
+## Ejecucón del programa🛠️ 
 
 Al seleccionar alguna de las opciones anteriores podrá ver el siguiente reporte :
 
@@ -39,19 +39,19 @@ Elegiste la opción: 4
 - visitador {'nombre': 'Felipe Salinas', 'cantidad': 0}
 - ¡Reporte de ventas por Visitador terminado!
 
-## Despliegue📦
+## Despliegue🔎
 Herramientas utilizadas para el desarrollo
 - Visual Studio Code
  - Github
    
 ## Versionado📌
-Versión 1.01
+Versión 1.0
 
 ## Autores ✒
 Proyecto realizado por :
 ● Salinas Javier DNI : 27794377
 
-##Licencia📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para
-detalles
+## Licencia📄
+Este proyecto está bajo la Licencia (27.794.377) 
+- Ver el archivo LICENSE.md para detalles
 
