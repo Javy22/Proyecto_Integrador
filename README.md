@@ -9,15 +9,15 @@ El mismo es un programa que que busca orientar y analizar los productos más com
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento
 en tu máquina local para propósitos de desarrollo y pruebas.
 Mira Deployment para conocer cómo desplegar el proyecto.
-
+```
 Pre-requisitos📋
 Instalar las siguientes librerías dentro de Visual Studio Code 🔧
--import csv
--from pickle import TRUE
--from this import d
--import registro
--import random
-
+- import csv
+- from pickle import TRUE
+- from this import d
+- import registro
+- import random
+```
 Instalalar librería para leer el archivo CSV🔧
 -import csv
 
