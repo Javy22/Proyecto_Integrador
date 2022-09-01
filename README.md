@@ -5,18 +5,6 @@
 El mismo es un programa que busca orientar y analizar los productos más comercializados en la industria.
 Tambíen permite realizar reporte por visitador / farmacia.
 
-## Comenzando 💻
-Para comenzar se desplegará un menú con varias opciones, deberás elegir alguna y en el instante se genera reporte solicitado.
-
-
-1. Ingresar nuevo registro 
-2. Eliminar un registro
-3. Consulta de ventas por Laboratorio 
-4. Consultar registro venta por visitador
-5. Consulta general de los registros
-
-
-
 ## Pre-requisitos📋
 Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code 🔧
 - import csv
@@ -29,13 +17,28 @@ Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code �
 Instalar librería en archivo (registro.py )🔧
 - import csv
 
-##Ejecutando las pruebas ⚙
-Explica como ejecutar las pruebas automatizadas para este sistema
-Analice las pruebas end-to-end🔩
-Explica que verifican estas pruebas y por qué
-Da un ejemplo
-Y las pruebas de estilo de codificación ⌨
-Explica que verifican estas pruebas y por qué
+
+## Comenzando 💻
+Para comenzar se desplegará un menú con varias opciones, deberás elegir alguna y en el instante se genera reporte solicitado.
+
+
+1. Ingresar nuevo registro 
+2. Eliminar un registro
+3. Consulta de ventas por Laboratorio 
+4. Consultar registro venta por visitador
+5. Consulta general de los registros
+
+## Ejecucón del programa 
+
+Al seleccionar alguna de las opciones anteriores podrá ver el siguiente reporte :
+
+
+Elegiste la opción: 4
+
+Visitador:  {'nombre': 'Javier Salinas', 'cantidad': 4}
+visitador {'nombre': 'Felipe Salinas', 'cantidad': 0}
+¡Reporte de ventas por Visitador terminado!
+
 
 Despliegue📦
 Agrega notas adicionales sobre cómo hacer deploy
