@@ -3,14 +3,14 @@
 # MyData
 
 El mismo es un programa que que busca orientar y analizar los productos más comercializados en la industria.
+Tambíen permite realizar reporte por visitador / farmacia.
 
-
-# Comenzando🚀
+## Comenzando🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento
 en tu máquina local para propósitos de desarrollo y pruebas.
 Mira Deployment para conocer cómo desplegar el proyecto.
-```
-Pre-requisitos📋
+
+## Pre-requisitos📋
 Instalar las siguientes librerías dentro (reporte.py) en Visual Studio Code 🔧
 - import csv
 - from pickle import TRUE
