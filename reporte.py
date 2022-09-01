@@ -83,9 +83,22 @@ def ingresar_datos():
              elif nro_localidad == 3:
               localidad = "Interior"
               break 
+    while True:
+             nro_visitador = int(input('Elegir visitador : 1- Salinas Javier 2- Gomez Hernan 3- Cervo Francisco : '))
+        
+
+             if nro_visitador == 1:
+              visitador = "Salinas Javier"
+              break
+             elif nro_visitador == 2:
+              visitador = "Gomez Hernan"
+              break   
+             elif nro_visitador == 3:
+              visitador = "Cervo Francisco"
+              break 
            
     provincia = str(input('Ingresar Provincia :'))
-    visitador = str(input('Ingresar Nombre del visitador :'))
+    #visitador = str(input('Ingresar Nombre del visitador :'))
     medicamento = str(input('Ingresar nombre del medicamento :'))
     cantidad = int(input('Ingresar cantidad vendida :'))
    
@@ -133,7 +146,7 @@ def eliminar_visitador_por_nombre():
     se_encontro_base = False
     for base in data:
         if base.get("visitador") == base_a_borrar :
-            #va a buscar la funcion dentro de registro.py
+#va a buscar la funcion dentro de registro.py
             registro.eliminar_de_lista(data,base)
             se_encontro_base = True
             break
@@ -142,11 +155,11 @@ def eliminar_visitador_por_nombre():
     else:
         print ("Encontre al Visitador")  
         registro.reordenar_ids()
-       # Aqui sobreescribimos el archivo con "W"
+# Aqui sobreescribimos el archivo con "W"
         with open ("venta.csv","w", newline="") as csvfile:
-             #Columnas
+#Columnas
          header = ["id" , "farmacia", "laboratorio" , "localidad", "provincia", "visitador", "medicamento", "cantidad"]
-        #creo un objeto writer
+#creo un objeto writer
          writer = csv.DictWriter(csvfile, header) 
          #escribe el header 
          writer.writeheader()
@@ -154,84 +167,78 @@ def eliminar_visitador_por_nombre():
          registro.reordenar_ids()
 
 
-def read_csv(filename):
-    with open(filename, 'r') as csvfile:
-        data=list(csv.DictReader(csvfile))
-    return data
-
 # Reporte de Cantidad vendida por Visitador
 def reporte_visitador():
- def reporte_visitador_reporte(visitador):
-    data = read_csv('venta.csv')
-    #genero un diccionario para obtener cantidad x visitador
+ def reporte_prueba(visitador): 
+    data = registro.read_csv('venta.csv')
     d_visitador = {}
     suma_visitador = 0
     for i in range (len(data)):
-        valores =  data[i]     
+        valores =  data[i]
         if "visitador" in valores and valores.get('visitador') == visitador:
             suma_visitador += int(valores.get('cantidad', 0))
-        d_visitador['nombre'] = visitador
-        d_visitador['cantidad'] = suma_visitador
-        return d_visitador
-# visitador = str(input('Ingrese el nombre del visitador: ')) 
- d = reporte_visitador_reporte('Javier Salinas')
- d1= reporte_visitador_reporte('Felipe Salinas')
+    d_visitador['nombre'] = visitador
+    d_visitador['cantidad'] = suma_visitador
+    return d_visitador
+ d = reporte_prueba('Javier Salinas')
+ d1= reporte_prueba('Felipe Salinas')
  if d.get('Javier Salinas') == 0:
     print('No existe ese Visitador')
  else:
-    print('Visitador: ', d  )
-    print('visitador' ,d1)
+    print('Visitador:', d)
+    print('Visitador:', d1)
+ 
 
 # En la siguiente función vamos a generar reporte por Laboratorio
 # indica que cantidad fue recetada por farmacia.           
-def generar_posicion():
-  with open ('venta.csv') as csvfile:
-        data = list(csv.DictReader(csvfile))
-        laboratorio_elea = 0
-        laboratorio_pfizer = 0
-        try:
-            for i in range (len(data)):
-                valores =  data[i]
-                for k,v in valores.items():
-                    if k == "laboratorio" and v == "Laboratorio Elea":
-                        laboratorio_elea += 1
-                    if k == "laboratorio" and v == "Laboratorio Pfizer":
-                        laboratorio_pfizer += 1
-        except:
+#def generar_posicion():
+ # with open ('venta.csv') as csvfile:
+  #      data = list(csv.DictReader(csvfile))
+   #     laboratorio_elea = 0
+    #    laboratorio_pfizer = 0
+     #   try:
+      #      for i in range (len(data)):
+       #         valores =  data[i]
+        #        for k,v in valores.items():
+         #           if k == "laboratorio" and v == "Laboratorio Elea":
+          #              laboratorio_elea += 1
+           #         if k == "laboratorio" and v == "Laboratorio Pfizer":
+            #            laboratorio_pfizer += 1
+      #  except:
 
-           print("{} No se detalla ambientes".format(i))
-           print("Cantidad de Medicametos recetados de :{}".format(laboratorio_elea))
-           print("Cantidad de Medicametos recetados de :{}".format(laboratorio_pfizer))
+       #    print("{} No se detalla ambientes".format(i))
+       #    print("Cantidad de Medicametos recetados de :{}".format(laboratorio_elea))
+        #   print("Cantidad de Medicametos recetados de :{}".format(laboratorio_pfizer))
 
 
-def read_csv(filename):
-    with open(filename, 'r') as csvfile:
-        data=list(csv.DictReader(csvfile))
-    return data
+#def read_csv(filename):
+ #   with open(filename, 'r') as csvfile:
+  #      data=list(csv.DictReader(csvfile))
+   # return data
 
-def reporte_prueba2():
+#def reporte_prueba2():
      #print ("Reporte cantidad vendidad por el visitador /n")
- def reporte_prueba3(farmacia):
-    data = read_csv('venta.csv')
-    d_farmacia = {}
-    suma_cantidad = 0
-    for i in range (len(data)):
-        valores =  data[i]
+ #def reporte_prueba3(farmacia):
+  #  data = read_csv('venta.csv')
+   # d_farmacia = {}
+    #suma_cantidad = 0
+    #for i in range (len(data)):
+     #   valores =  data[i]
         #visitador = str(input('Ingrese el nombre del visitador: '))      
-        if "farmacia" in valores and valores.get('farmacia') == farmacia:
-            suma_cantidad += int(valores.get('cantidad', 0))
-    d_farmacia['nombre'] = farmacia
-    d_farmacia['cantidad'] = suma_cantidad
-    return d_farmacia
+      #  if "farmacia" in valores and valores.get('farmacia') == farmacia:
+       #     suma_cantidad += int(valores.get('cantidad', 0))
+   # d_farmacia['nombre'] = farmacia
+    #d_farmacia['cantidad'] = suma_cantidad
+  #  return d_farmacia
 
 # visitador = str(input('Ingrese el nombre del visitador: '))
- d = reporte_prueba3('Javier Salinas') 
- d1= reporte_prueba3('Farmacia Aguila'and'Farmacia DTL')
- if d.get('Javier Salinas') == 0:
-    print('No existe ese Visitador')
- else:
-    print('Cantidad: ',  d)
-    print('farmacia' ,d1)
+# d = reporte_prueba3('Javier Salinas') 
+ #d1= reporte_prueba3('Farmacia Aguila'and'Farmacia DTL')
+# if d.get('Javier Salinas') == 0:
+ #   print('No existe ese Visitador')
+# else:
+ #   print('Cantidad: ',  d)
+  #  print('farmacia' ,d1)
     #print("El vendedor {} ".format(d))
     #print("Cantidad de Medicametos recetados de :{}".format(d))
            #for p in d_visitador 
@@ -279,7 +286,7 @@ if __name__ == '__main__':
             
         elif opcion == 3:
             # Posicionamiento en Mercado
-           generar_posicion()
+           #generar_posicion()
            print('¡Reporte de ventas realizadas finalizado!')
 
         elif opcion == 4:
@@ -290,9 +297,9 @@ if __name__ == '__main__':
            registro_general()   
            print('¡Base de datos general')
         elif opcion == 6:
-           reporte_prueba2()
+          # reporte_prueba2()
            
-           #print('¡outfit Generado!')
+           print('¡outfit Generado!')
         
         
         else:

@@ -148,4 +148,7 @@ def read_csv(filename):
         data=list(csv.DictReader(csvfile))
      return data
 
-     
+def read_csv(filename):
+ with open(filename, 'r') as csvfile:
+  data=list(csv.DictReader(csvfile))
+ return data
