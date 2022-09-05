@@ -1,8 +1,2 @@
 id,farmacia,laboratorio,localidad,provincia,visitador,medicamento,cantidad
-9,Farmacia Aguila,laboratorio Pfizer,CABA,fff,Javier Salinas,Omatex,4
-12,Farmacia Aguila,Laboratorio Pfizer,CABA,ddd,Javier Salinas,eeee,1
-13,Farmacia DTL,Laboratorio Elea,GBA,fff,Javier Salinas,RRR,40
-14,Farmacia Aguila,Laboratorio Pfizer,GBA,fff,Felipe Salinas,DDD,30
-15,Farmacia Aguila,Laboratorio Elea,CABA,bb,Javier Salinas,Omatex,500
-16,Farmacia Aguila,Laboratorio Pfizer,Interior,ddd,Felipe Salinas,ddd,20
-17,Farmacia Aguila,Laboratorio Pfizer,Interior,ff,Gomez Hernan,ee,40
+

@@ -26,9 +26,7 @@ from pickle import TRUE
 from this import d
 import registro
 import random
-
-dic = {}
-reporte = {}
+from tabulate import tabulate
 
 def ingresar_datos():
     '''
@@ -224,6 +222,7 @@ def generar_posicion():
  print("La cantidad de ventas del Laboratorio Pfizer es :{}".format(laboratorio_pfizer))
  print("La cantidad de ventas del Laboratorio Roemers es :{}".format(laboratorio_roemers))
  print("La cantidad de ventas del Laboratorio Bago es :{}".format(laboratorio_bago))
+ 
 #########################################################################
 
 # Vista general del reporte, el el muestra todo el contenido del csv
@@ -276,9 +275,7 @@ if __name__ == '__main__':
         elif opcion == 5:
            registro_general()   
            print('¡Base de datos general')
-           
-           
-        
+            
         else:
             # Finalizar ejecución
          print('¡Fin del programa!')
