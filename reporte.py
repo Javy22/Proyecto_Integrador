@@ -181,68 +181,49 @@ def reporte_visitador():
     d_visitador['cantidad'] = suma_visitador
     return d_visitador
  d = reporte_prueba('Javier Salinas')
- d1= reporte_prueba('Felipe Salinas')
+ d1= reporte_prueba('Gomez Hernan')
+ d2= reporte_prueba('Cervo Francisco')
+ 
  if d.get('Javier Salinas') == 0:
     print('No existe ese Visitador')
+ if d.get('Gomez Hernan') == 0:
+    print('No existe ese Visitador')
+ if d.get('Cervo Francisco') == 0:
+    print('No existe ese Visitador')
+
  else:
-    print('Visitador:', d)
-    print('Visitador:', d1)
+     print('Visitador:', d)
+     print('Visitador:', d1)
+     print('visitador:', d2)
  
 
 # En la siguiente función vamos a generar reporte por Laboratorio
 # indica que cantidad fue recetada por farmacia.           
-#def generar_posicion():
- # with open ('venta.csv') as csvfile:
-  #      data = list(csv.DictReader(csvfile))
-   #     laboratorio_elea = 0
-    #    laboratorio_pfizer = 0
-     #   try:
-      #      for i in range (len(data)):
-       #         valores =  data[i]
-        #        for k,v in valores.items():
-         #           if k == "laboratorio" and v == "Laboratorio Elea":
-          #              laboratorio_elea += 1
-           #         if k == "laboratorio" and v == "Laboratorio Pfizer":
-            #            laboratorio_pfizer += 1
-      #  except:
-
-       #    print("{} No se detalla ambientes".format(i))
-       #    print("Cantidad de Medicametos recetados de :{}".format(laboratorio_elea))
-        #   print("Cantidad de Medicametos recetados de :{}".format(laboratorio_pfizer))
-
-
-#def read_csv(filename):
- #   with open(filename, 'r') as csvfile:
-  #      data=list(csv.DictReader(csvfile))
-   # return data
-
-#def reporte_prueba2():
-     #print ("Reporte cantidad vendidad por el visitador /n")
- #def reporte_prueba3(farmacia):
-  #  data = read_csv('venta.csv')
-   # d_farmacia = {}
-    #suma_cantidad = 0
-    #for i in range (len(data)):
-     #   valores =  data[i]
-        #visitador = str(input('Ingrese el nombre del visitador: '))      
-      #  if "farmacia" in valores and valores.get('farmacia') == farmacia:
-       #     suma_cantidad += int(valores.get('cantidad', 0))
-   # d_farmacia['nombre'] = farmacia
-    #d_farmacia['cantidad'] = suma_cantidad
-  #  return d_farmacia
-
-# visitador = str(input('Ingrese el nombre del visitador: '))
-# d = reporte_prueba3('Javier Salinas') 
- #d1= reporte_prueba3('Farmacia Aguila'and'Farmacia DTL')
-# if d.get('Javier Salinas') == 0:
- #   print('No existe ese Visitador')
-# else:
- #   print('Cantidad: ',  d)
-  #  print('farmacia' ,d1)
-    #print("El vendedor {} ".format(d))
-    #print("Cantidad de Medicametos recetados de :{}".format(d))
-           #for p in d_visitador 
-
+def generar_posicion():
+ with open ('venta.csv') as archivo:
+        data = list(csv.DictReader(archivo))
+        laboratorio_elea = 0
+        laboratorio_pfizer= 0
+        laboratorio_roemers = 0
+        laboratorio_bago = 0
+        try:
+            for i in range (len(data)):
+                valores =  data[i]
+                for k,v in valores.items():
+                    if k == "laboratorio" and v == "Laboratorio Elea":
+                        laboratorio_elea += 1
+                    if k == "laboratorio" and v == "Laboratorio Pfizer":
+                        laboratorio_pfizer += 1
+                    if k == "laboratorio" and v == "Laboratorio Roemers":
+                        laboratorio_pfizer += 1   
+                    if k == "laboratorio" and v == "Laboratorio Bago":
+                        laboratorio_pfizer += 1     
+        except:
+            print("{} No se detalla ambientes".format(i))
+ print("La cantidad de ventas del Laboratorio Elea es :{}".format(laboratorio_elea))
+ print("La cantidad de ventas del Laboratorio Pfizer es :{}".format(laboratorio_pfizer))
+ print("La cantidad de ventas del Laboratorio Roemers es :{}".format(laboratorio_roemers))
+ print("La cantidad de ventas del Laboratorio Bago es :{}".format(laboratorio_bago))
 #########################################################################
 
 # Vista general del reporte, el el muestra todo el contenido del csv
@@ -266,7 +247,6 @@ if __name__ == '__main__':
     3. Consulta de ventas por Laboratorio 
     4. Consultar registro venta por visitador
     5. Consulta general de los registros
-    6.
     Cualquier otro valor - Finalizar ejecución del programa
     Opcion elegida:'''
 
@@ -286,7 +266,7 @@ if __name__ == '__main__':
             
         elif opcion == 3:
             # Posicionamiento en Mercado
-           #generar_posicion()
+           generar_posicion()
            print('¡Reporte de ventas realizadas finalizado!')
 
         elif opcion == 4:
@@ -296,13 +276,10 @@ if __name__ == '__main__':
         elif opcion == 5:
            registro_general()   
            print('¡Base de datos general')
-        elif opcion == 6:
-          # reporte_prueba2()
            
-           print('¡outfit Generado!')
-        
+           
         
         else:
             # Finalizar ejecución
          print('¡Fin del programa!')
-     #   break
+        break
