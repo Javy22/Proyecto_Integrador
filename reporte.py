@@ -26,13 +26,13 @@ from pickle import TRUE
 from this import d
 import registro
 import random
-from tabulate import tabulate
+
 
 def ingresar_datos():
     '''
-    IMPORTANTE: No generar los IDs a mano, utilizar la función generar_id()
+    IMPORTANTE: Los datos se generan automáticamente.
     '''
-    suma_total = 0
+    
     id = registro.generar_id()
   
     while True:
@@ -96,7 +96,6 @@ def ingresar_datos():
               break 
            
     provincia = str(input('Ingresar Provincia :'))
-    #visitador = str(input('Ingresar Nombre del visitador :'))
     medicamento = str(input('Ingresar nombre del medicamento :'))
     cantidad = int(input('Ingresar cantidad vendida :'))
    
@@ -111,8 +110,8 @@ def ingresar_datos():
     base["visitador"] = visitador
     base["medicamento"] = medicamento
     base["cantidad"] = cantidad 
- #   pass, el newline es para que no agregue nada a la última línea
- # podría convertirlo en una funcion -- (a) para abrir
+ # El newline es para que no agregue nada a la última línea
+ # podría convertirlo en una funcion -- (a) para abri
     with open ("venta.csv","a", newline = "" ) as csvfile:
  #especificar la columna
      header = ["id" , "farmacia", "laboratorio" , "localidad", "provincia", "visitador", "medicamento","cantidad"]
@@ -121,7 +120,7 @@ def ingresar_datos():
  #escribir la linea
      writer.writerow(base)  
 
-    
+       
 
 def eliminar_visitador_por_nombre():
     '''
@@ -178,7 +177,7 @@ def reporte_visitador():
     d_visitador['nombre'] = visitador
     d_visitador['cantidad'] = suma_visitador
     return d_visitador
- d = reporte_prueba('Javier Salinas')
+ d = reporte_prueba('Salinas Javier')
  d1= reporte_prueba('Gomez Hernan')
  d2= reporte_prueba('Cervo Francisco')
  
@@ -198,7 +197,7 @@ def reporte_visitador():
 # En la siguiente función vamos a generar reporte por Laboratorio
 # indica que cantidad fue recetada por farmacia.           
 def generar_posicion():
- with open ('venta.csv') as archivo:
+ with open ('venta.csv','r') as archivo:
         data = list(csv.DictReader(archivo))
         laboratorio_elea = 0
         laboratorio_pfizer= 0
@@ -217,7 +216,7 @@ def generar_posicion():
                     if k == "laboratorio" and v == "Laboratorio Bago":
                         laboratorio_pfizer += 1     
         except:
-            print("{} No se detalla ambientes".format(i))
+            print("{} No se encuentra registro".format(i))
  print("La cantidad de ventas del Laboratorio Elea es :{}".format(laboratorio_elea))
  print("La cantidad de ventas del Laboratorio Pfizer es :{}".format(laboratorio_pfizer))
  print("La cantidad de ventas del Laboratorio Roemers es :{}".format(laboratorio_roemers))

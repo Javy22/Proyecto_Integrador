@@ -37,7 +37,7 @@ def generar_id():
 
     Valor de retorno → 3 + 1 → 4
     '''
-    with open('venta.csv', 'r') as csvfile:
+    with open('venta.csv') as csvfile:
     # Leo el archivo CSV y lo almaceno en data
         data = list(csv.DictReader(csvfile))
 
@@ -99,47 +99,14 @@ def reordenar_ids():
         # Escribir los nombres de las columnas
         writer.writeheader()
 
-        # Escribir las prendas
+        # Escribe el dato
         writer.writerows(data)
 
-
-#def buscar_por_categoria(bases, categoria_buscada):
-    '''
-    Función que se encarga de buscar una prenda de una categoría dentro de una lista de prendas
-    
-    Valores de retorno
-    - Si la función encuentra una prenda de la categoría deseada, devuelve la prenda: 
-        {"id": <id>, "nombre": <nombre>, "categoria": categoria_buscada, "color": <color>}.
-        
-    - Si la función no encuentra ninguna prenda de la categoría deseada, devuelve None.
-    '''
- #   for base in bases:
-
-        # Si la clave 'categoria' de la prenda, es igual a la categoría buscada, devolver esa prenda
-  #      if base.get('laboratorio') == categoria_buscada:
-    #        return base
-    
-    # Si no se encontró ninguna prenda de dicha categoría, devolver None (nada)
-   # return None
 
 
 def eliminar_de_lista(lista, elemento):
     '''
-    Esta función se encarga de eliminar un elemento de una lista
-    ¿Cómo funciona?
-    
-    1. La función busca el índice de dicho elemento usando él método .index(elemento)
-        lista = ['a', 'e', 'i', 'o', 'u']
-        indice_i = lista.index('i')
-        print(indice_i)
-        >>> 2
-
-    2. La función utiliza el método .pop(indice) para eliminar un elemento de la lista
-        lista = ['a', 'e', 'i', 'o', 'u']
-        indice_i = lista.index('i')
-        lista.pop(indice_i)
-        print(lista)
-        >>> ['a', 'e', 'o', 'u']
+    función que elimina un elemento de una lista
     '''
     lista.pop(lista.index(elemento))
 
@@ -148,7 +115,3 @@ def read_csv(filename):
         data=list(csv.DictReader(csvfile))
      return data
 
-def read_csv(filename):
- with open(filename, 'r') as csvfile:
-  data=list(csv.DictReader(csvfile))
- return data
